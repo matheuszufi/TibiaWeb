@@ -1,0 +1,212 @@
+@font-face {font-family: martel; src: url(../martel.ttf);}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: Tahoma;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #444;
+    overflow: hidden;
+  }
+  
+  #app {
+    width: 512px;
+    margin: auto;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .startHidden {
+    display: none;
+  }
+  
+  h3 {
+    margin: 4px;
+    font-weight: normal;
+  }
+  
+  input {
+    width: 80%;
+    margin: 4px;
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  button {
+    background-color: #4c4;
+    font-size: 15px;
+    color: white;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  button:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .alternative {
+    background-color: #44c;
+    border-radius: 2px;
+  }
+  
+  #loading {
+      position: absolute;
+      top: calc(50% - 100px);
+      left: calc(50% - 100px);
+      z-index: 1;
+  }
+  
+  #auth img {
+    cursor: pointer;
+    margin: 4px;
+  }
+  
+  #auth img:hover {
+    opacity: 0.75;
+  }
+  
+  #userImg {
+    height: 40px;
+    border-radius: 100%;
+  }
+  
+  .danger {
+    background-color: #c44;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  
+  }
+  
+  li {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li:hover {
+    background-color: #eeeeee0e;
+    border-radius: 8px;
+  }
+  
+  .todoBtn {
+    float: right;
+    font-size: 12px;
+    text-transform: lowercase;
+    width: 40px;
+    height: 26px;
+    border-radius: 2px;
+  
+    
+    
+  }
+
+
+  .fa-brands {
+   font-size: 24px;
+   margin: 4px;
+  }
+
+#todoListHead {
+    display: flex;
+    /* background-color: red; */
+    width: 65%;
+    justify-content: space-between;
+}
+
+.playBtn {
+    background-color: rgb(87, 167, 87);
+    padding: 4px;
+    border-radius: 2px;
+    width: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.characters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameCharacter {
+    /* background-color: red; */
+    width: 240px;
+}
+
+#game {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 60, 60);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#gameLeft {
+    background-color: rgb(60, 60, 60);
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+#gameCenter {
+    background-color: rgb(131, 131, 131);
+    width: calc(100vw - 200px);
+    height: 100vh;
+    overflow: hidden;
+   
+}
+#gameRight {
+    background-color: rgb(60, 60, 60);
+    width: 200px;
+    height: 100vh;
+    z-index: 1;
+ 
+}
+
+#world {
+    position: absolute;
+    display: flex;
+    background-color: green;
+    width: 10000px;
+    height: 10000px;
+    transform: translateX(45vw) translateY(45vh);
+}
+
+#character {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+}
