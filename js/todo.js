@@ -106,6 +106,57 @@ var world = document.getElementById('world');
         newChar.setAttribute('id', 'character')
         world.appendChild(newChar)
     
+
+
+        let playerPosX = 0;
+        let playerPosY = 0;
+
+        var worldStartX = 800;
+        var worldStartY = 400;
+      
+      
+        document.addEventListener('keydown', (event) => {
+      
+          btnA = "a";
+          btnW = "w";
+          btnD = "d";
+          btnS = "s";
+        
+          if(event.key === btnA || event.keyCode === 37) {
+              playerPosY = playerPosY - 50;
+              newChar.style.transform = `translate(${playerPosY}px, ${playerPosX}px)`;
+              worldStartX = worldStartX + 50
+              world.style.transform =`translate(${worldStartX}px, ${worldStartY}px)`;
+          } else if (event.key === btnW || event.keyCode === 38) {
+            playerPosX = playerPosX - 50;
+            newChar.style.transform = `translate(${playerPosY}px, ${playerPosX}px)`;
+            worldStartY = worldStartY + 50
+            world.style.transform =`translate(${worldStartX}px, ${worldStartY}px)`;
+          } else if (event.key === btnD || event.keyCode === 39) {
+            playerPosY = playerPosY + 50;
+            newChar.style.transform = `translate(${playerPosY}px, ${playerPosX}px)`;
+            worldStartX = worldStartX - 50
+            world.style.transform =`translate(${worldStartX}px, ${worldStartY}px)`;
+          } else if (event.key === btnS || event.keyCode === 40) { 
+              playerPosX = playerPosX + 50;
+              newChar.style.transform = `translate(${playerPosY}px, ${playerPosX}px)`;
+              worldStartY = worldStartY - 50
+              world.style.transform =`translate(${worldStartX}px, ${worldStartY}px)`;
+          }
+          
+      
+      
+      })
+      
+
+
+
+
+
+
+
+
+
         
   
         console.log(characterData);
@@ -117,5 +168,6 @@ var world = document.getElementById('world');
   
 
 
-var worldStartX = 0;
-var worldStartY = 0;
+
+
+  

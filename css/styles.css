@@ -201,7 +201,7 @@ body {
     background-color: green;
     width: 10000px;
     height: 10000px;
-    transform: translateX(45vw) translateY(45vh);
+    transform: translateX(800px) translateY(400px);
 }
 
 #character {
