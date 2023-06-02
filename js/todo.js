@@ -115,3 +115,7 @@ var world = document.getElementById('world');
       });
   }
   
+
+
+var worldStartX = 0;
+var worldStartY = 0;
