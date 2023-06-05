@@ -1,4 +1,6 @@
 
+
+
 function playWithChar(key) {
     var dbRefCharacter = dbRefUsers.child(firebase.auth().currentUser.uid).child(key);
 
@@ -29,9 +31,15 @@ function playWithChar(key) {
                 isLoggedIn: true
             })  
 
+
             newChar.style.transform = 'translate(' + playerPosY + 'px, ' + playerPosX + 'px)';
             world.style.transform = 'translate(' + worldStartX + 'px, ' + worldStartY + 'px)';
             world.appendChild(newChar);
+
+            var charNameUi = document.createElement('div')
+            charNameUi.innerHTML = characterData.name;
+            newChar.appendChild(charNameUi)
+
 
             document.addEventListener('keydown', function(event) {
                 var btnA = 'a';
@@ -106,4 +114,19 @@ function playWithChar(key) {
         .catch(function(error) {
             showError('Falha ao obter dados do personagem:', error);
         });
+
+    // var logOutBtn = document.createElement('button')
+    // logOutBtn.setAttribute('id', 'logOutBtn')
+    // world.appendChild(logOutBtn)
+    // var logOutBtnI = document.createElement('i')
+    // logOutBtnI.setAttribute('class', 'fa-solid fa-right-from-bracket')
+    // logOutBtnI.setAttribute('id', 'logOutBtn')
+    // logOutBtn.appendChild(logOutBtnI);
+
+    // var logOutBtnP = document.createElement('p')
+    // logOutBtnP.innerHTML = "Logout"
+    // logOutBtn.appendChild(logOutBtnP)
+    
+
 }
+
