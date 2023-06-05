@@ -11,7 +11,7 @@
   <div id="app">
     <!--Logotipo do TodoList-->
     <div class="center">
-      <img src="img/Tibia_Logo.png">
+      <img id="tibialogo" src="img/Tibia_Logo.png">
     </div>
 
     <!-- Loading-->
@@ -106,7 +106,7 @@
         <form id="todoForm">
           <h3 id="todoFormTitle">Create character:</h3>
           <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="Name of character">
+          <input type="text" id="name" placeholder="Character name">
           <button type="submit" id="submitTodoForm">Add character</button>
         </form>
       </div>
@@ -123,13 +123,13 @@
 
 <div id="game" class="startHidden">
 
-    <div id="gameLeft"></div>
+    <!-- <div id="gameLeft"></div> -->
     <div id="gameCenter">
         <div id="world">
-            
+            <!-- <div id="character"></div> -->
         </div>
     </div>
-    <div id="gameRight"></div>
+    <!-- <div id="gameRight"></div> -->
 
 
 </div>
@@ -149,6 +149,7 @@
     <script src="js/utils.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/play.js"></script>
 
 </body>
 </html>

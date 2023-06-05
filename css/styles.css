@@ -14,16 +14,18 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: #444;
+    /* background-color: #444; */
+    background: url(../img/bg.jpg);
     overflow: hidden;
   }
   
   #app {
     width: 512px;
     margin: auto;
-    border: 1px solid white;
+    border: 1px solid rgba(167, 165, 165, 0.43);
     padding: 20px;
     border-radius: 20px;
+        background-color: #444444e8;
   }
   
   .center {
@@ -53,13 +55,21 @@ body {
     background-color: #4c4;
     font-size: 15px;
     color: white;
-    padding: 4px;
+    padding: 8px;
     margin: 4px;
-    border-radius: 8px;
+    border-radius: 2px;
     border: none;
     outline: none;
   }
-  
+  #userInfo {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+#tibialogo {
+  /* background-color: red; */
+  margin-bottom: 12px;
+}
+
   button:hover {
     opacity: 0.75;
     cursor: pointer;
@@ -182,7 +192,7 @@ body {
 
 #gameCenter {
     background-color: rgb(131, 131, 131);
-    width: calc(100vw - 200px);
+    width: calc(100vw);
     height: 100vh;
     overflow: hidden;
    
@@ -190,9 +200,8 @@ body {
 #gameRight {
     background-color: rgb(60, 60, 60);
     width: 200px;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
- 
 }
 
 #world {
@@ -209,4 +218,5 @@ body {
     width: 50px;
     height: 50px;
     z-index: 10;
+    border-radius: 50%;
 }

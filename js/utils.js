@@ -114,7 +114,7 @@ function showError (prefix, error) {
 
 
 var actionCodeSettings = {
-  url: 'http://127.0.0.1:5500/'
+  url: 'https://matheuszufi.github.io/TibiaWeb/'
 }
 
 
