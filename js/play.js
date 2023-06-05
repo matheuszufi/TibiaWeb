@@ -130,3 +130,18 @@ function playWithChar(key) {
 
 }
 
+function logout (snapshot) {
+    dbRefCharacter.once('value')
+    .then(function(snapshot) {
+        var characterDataLogOut = snapshot.val();
+
+        dbRefCharacter.update({
+            isLoggedIn: false
+        })  
+
+        characterDataLogOut.isLoggedIn = false
+    })
+  
+
+
+}
