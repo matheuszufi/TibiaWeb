@@ -25,8 +25,10 @@ body {
     border: 1px solid rgba(167, 165, 165, 0.43);
     padding: 20px;
     border-radius: 20px;
-        background-color: #444444e8;
-  }
+       
+    background: url(../img/backgroundStyleTibia.png);
+      }
+
   
   .center {
     text-align: center;
@@ -228,6 +230,6 @@ body {
   top: 0px;
   font-size: 28px;
   background-color: transparent;
-  z-index: 1;
+  z-index: 100;
   
 }
